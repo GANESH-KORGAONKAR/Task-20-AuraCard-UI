@@ -64,12 +64,17 @@ main {
     border-radius: 1.3rem;
     border: 7px solid black;
     transition: all 0.5s linear;
+    cursor: pointer;
 }
 
 .card:hover {
     border: 7px solid transparent;
     animation: borderAnimate 3s linear infinite;
     animation-play-state: running;
+}
+
+.card:active {
+    transform: scale(0.97);
 }
 
 .card h3 {
@@ -87,7 +92,7 @@ main {
 .card1 {
     background:
         linear-gradient(black, black) padding-box,
-        conic-gradient(from var(--rotate), black, black, #4781b4, black) border-box;
+        conic-gradient(from var(--rotate), black, #4781b4, black) border-box;
 
     /* box-shadow: 0 0 0px #6F9BED; */
 }
@@ -102,7 +107,7 @@ main {
 .card2 {
     background:
         linear-gradient(black, black) padding-box,
-        conic-gradient(from var(--rotate), black, black, #AC58E9, black) border-box;
+        conic-gradient(from var(--rotate), black, #AC58E9, black) border-box;
 
     /* box-shadow: 0 0 0px #AC58E9; */
 }
@@ -116,7 +121,7 @@ main {
 .card3 {
     background:
         linear-gradient(black, black) padding-box,
-        conic-gradient(from var(--rotate), black, black, #942F36, black) border-box;
+        conic-gradient(from var(--rotate), black, #942F36, black) border-box;
 
     /* box-shadow: 0 0 0px #942F36; */
 }
@@ -130,7 +135,7 @@ main {
 .card4 {
     background:
         linear-gradient(black, black) padding-box,
-        conic-gradient(from var(--rotate), black, black, #3D92EB, black) border-box;
+        conic-gradient(from var(--rotate), black, #3D92EB, black) border-box;
 
     /* box-shadow: 0 0 0px #3D92EB; */
 }
@@ -144,7 +149,7 @@ main {
 .card5 {
     background:
         linear-gradient(black, black) padding-box,
-        conic-gradient(from var(--rotate), black, black, #2CE6E2, black) border-box;
+        conic-gradient(from var(--rotate), black, #2CE6E2, black) border-box;
 
     /* box-shadow: 0 0 0px #2CE6E2; */
 }
