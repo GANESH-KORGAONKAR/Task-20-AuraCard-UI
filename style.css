@@ -61,41 +61,98 @@ main {
     align-items: center;
     text-align: center;
     gap: 10px;
-    border-radius: 1rem;
-    /* box-shadow: 0 0 40px whitesmoke; */
-    border: 5px solid transparent;
-    animation: borderAnimate 6s linear infinite;
+    border-radius: 1.3rem;
+    border: 7px solid black;
+    transition: all 0.5s linear;
+}
+
+.card:hover {
+    border: 7px solid transparent;
+    animation: borderAnimate 3s linear infinite;
+    animation-play-state: running;
+}
+
+.card h3 {
+    font-size: 1.6rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.card p {
+    font-size: 1.1rem;
+    font-weight: 500;
+    letter-spacing: 1px;
 }
 
 .card1 {
     background:
         linear-gradient(black, black) padding-box,
-        conic-gradient(from var(--rotate), black, #6B96BC, black) border-box;
+        conic-gradient(from var(--rotate), black, black, #4781b4, black) border-box;
+
+    /* box-shadow: 0 0 0px #6F9BED; */
+}
+
+.card1:hover {
+    box-shadow: 0 0 20px #7da9cf, 0 0 40px #81add3, 0 0 60px #82a6c5;
+    text-shadow: 0 0 10px #6F9BED;
+    color: #6F9BED;
 }
 
 
-.card2{
+.card2 {
     background:
         linear-gradient(black, black) padding-box,
-        conic-gradient(from var(--rotate), black, #AC58E9, black) border-box;
+        conic-gradient(from var(--rotate), black, black, #AC58E9, black) border-box;
+
+    /* box-shadow: 0 0 0px #AC58E9; */
 }
 
-.card3{
-    background:
-        linear-gradient(black, black) padding-box,
-        conic-gradient(from var(--rotate), black, #942F36, black) border-box;
+.card2:hover {
+    box-shadow: 0 0 20px #a85adf, 0 0 40px #b972ec, 0 0 60px #c893ee;
+    text-shadow: 0 0 10px #AC58E9;
+    color: #AC58E9;
 }
 
-.card4{
+.card3 {
     background:
         linear-gradient(black, black) padding-box,
-        conic-gradient(from var(--rotate), black, #3D92EB, black) border-box;
+        conic-gradient(from var(--rotate), black, black, #942F36, black) border-box;
+
+    /* box-shadow: 0 0 0px #942F36; */
+}
+
+.card3:hover {
+    box-shadow: 0 0 20px #94363c, 0 0 40px #99454b, 0 0 60px #945b5e;
+    text-shadow: 0 0 10px #942F36;
+    color: #942F36;
+}
+
+.card4 {
+    background:
+        linear-gradient(black, black) padding-box,
+        conic-gradient(from var(--rotate), black, black, #3D92EB, black) border-box;
+
+    /* box-shadow: 0 0 0px #3D92EB; */
+}
+
+.card4:hover {
+    box-shadow: 0 0 20px #4aa1ec, 0 0 40px #66aae6, 0 0 60px #9ac4e9;
+    text-shadow: 0 0 10px #3D92EB;
+    color: #3D92EB;
 }
 
 .card5 {
     background:
         linear-gradient(black, black) padding-box,
-        conic-gradient(from var(--rotate), black, #2CE6E2, black) border-box;
+        conic-gradient(from var(--rotate), black, black, #2CE6E2, black) border-box;
+
+    /* box-shadow: 0 0 0px #2CE6E2; */
+}
+
+.card5:hover {
+    box-shadow: 0 0 20px #3fece9, 0 0 40px #5be9e6, 0 0 60px #8ce4e2;
+    text-shadow: 0 0 10px #2CE6E2;
+    color: #2CE6E2;
 }
 
 .card img {
