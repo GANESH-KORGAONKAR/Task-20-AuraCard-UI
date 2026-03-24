@@ -15,6 +15,22 @@ html {
     color: whitesmoke;
 }
 
+@property --rotate {
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
+
+@keyframes borderAnimate {
+    from {
+        --rotate: 0deg;
+    }
+
+    to {
+        --rotate: 360deg;
+    }
+}
+
 main {
     width: 100%;
     min-height: 100vh;
@@ -29,7 +45,8 @@ main {
     width: 100%;
     min-height: auto;
     display: flex;
-    flex-direction: column; /* mobile: stack */
+    flex-direction: column;
+    /* mobile: stack */
     gap: 20px;
 }
 
@@ -45,7 +62,40 @@ main {
     text-align: center;
     gap: 10px;
     border-radius: 1rem;
-    box-shadow: 0 0 40px whitesmoke;
+    /* box-shadow: 0 0 40px whitesmoke; */
+    border: 5px solid transparent;
+    animation: borderAnimate 6s linear infinite;
+}
+
+.card1 {
+    background:
+        linear-gradient(black, black) padding-box,
+        conic-gradient(from var(--rotate), black, #6B96BC, black) border-box;
+}
+
+
+.card2{
+    background:
+        linear-gradient(black, black) padding-box,
+        conic-gradient(from var(--rotate), black, #AC58E9, black) border-box;
+}
+
+.card3{
+    background:
+        linear-gradient(black, black) padding-box,
+        conic-gradient(from var(--rotate), black, #942F36, black) border-box;
+}
+
+.card4{
+    background:
+        linear-gradient(black, black) padding-box,
+        conic-gradient(from var(--rotate), black, #3D92EB, black) border-box;
+}
+
+.card5 {
+    background:
+        linear-gradient(black, black) padding-box,
+        conic-gradient(from var(--rotate), black, #2CE6E2, black) border-box;
 }
 
 .card img {
